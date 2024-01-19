@@ -37,8 +37,7 @@ async def on_message(message):
 
 async def get_youtube_id(url: str, ignore_playlist=True) -> str:
     query = urlparse(url)
-    if query.hostname == 'youtu.be':
-        return query.path[1:]
+    if query.hostname == 'youtu.be': return query.path[1:]
     if query.hostname in {'www.youtube.com', 'youtube.com', 'music.youtube.com'}:
         if not ignore_playlist:
             # use case: get playlist id not current video in playlist
