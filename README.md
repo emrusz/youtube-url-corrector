@@ -2,7 +2,7 @@
 A Python based Discord bot to redirect YouTube links to Piped.
 
 Example `compose.yml`
-```compose
+```yml
 version: '3'
 
 services:
