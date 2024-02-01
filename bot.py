@@ -52,6 +52,8 @@ async def get_youtube_id(url: str, ignore_playlist=True) -> str:
             return query.path.split('/')[2]
         if query.path[:3] == '/v/':
             return query.path.split('/')[2]
+        if query.path[:8] == '/shorts/':
+            return query.path.split('/')[1]
 
 
 bot.run(DISCORD_TOKEN)
