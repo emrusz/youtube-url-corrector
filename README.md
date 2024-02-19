@@ -10,6 +10,6 @@ services:
       image: git.beans.team/em/yuc:latest
       environment:
         - DISCORD_TOKEN=your_discord_bot_token
-        - PIPED_URL=https://your.piped.url/watch?v=
+        - PIPED_URL=https://your.piped.url  # Do not append /watch?v=
       restart: unless-stopped
 ```
