@@ -25,6 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: |
-            git.beans.team/em/yuc:latest
-            git.beans.team/em/yuc:${{ github.event.release.tag_name }}
+          tags: git.beans.team/em/yuc:${{ github.event.release.tag_name }}
